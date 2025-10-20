@@ -1,0 +1,70 @@
+print("Welcome to Basic Calculator")
+
+while True  :
+
+    calc = input("Please Select the mathematical operation you want to perform""(+,-,*,/)")
+
+    numbers = input("Please write how many numbers you want to add"" (Minimum :2 / Maximum :4)")
+
+
+    if numbers == "2" :
+
+        number1 = float(input("Write the first number: "))
+        number2 = float(input("Write the second number: "))
+
+        if calc == "+" :
+
+            print(number1 + number2)
+        elif calc == "-" :
+
+            print(number1 - number2)
+        elif calc == "*" :
+            print(number1 * number2)
+        elif calc == "/" :
+            print(number1 / number2)
+            if number2 != 0 :
+                print("You cant divide by zero")
+    elif numbers == "3":
+        number1 = float(input("Write the first number: "))
+        number2 = float(input("Write the second number: "))
+        number3 = float(input("Write the third number: "))
+        if calc == "+" :
+            print(number1 + number2 + number3)
+        elif calc == "-" :
+            print(number1 - number2 + number3)
+        elif calc == "*" :
+            print(number1 * number2 + number3)
+        elif calc == "/" :
+            print(number1 / number2 /number3)
+            if number2 != number3 != 0 :
+                print("You cant divide by zero")
+
+    elif numbers == "4":
+        number1 = float(input("Write the first number: "))
+        number2 = float(input("Write the second number: "))
+        number3 = float(input("Write the third number: "))
+        number4 = float(input("Write the fourth number: "))
+
+        if calc == "+" :
+            print(number1 + number2 + number3 + number4)
+
+        elif calc == "-" :
+            print(number1 - number2 + number3 + number4)
+
+        elif calc == "*" :
+            print(number1 * number2 + number3 + number4)
+
+        elif calc == "/" :
+            print(number1 / number2 / number3 / number4)
+
+            if number2 != number3 != number4 != 0 :
+                print("You cant divide by zero")
+
+    elif numbers >= "5" :
+        print("Sadly im not eligable for that :(")
+
+        dot = input("Do you want to quit?"" (Y/N)")
+
+        if dot == "Y" :
+            print("Goodbye")
+            break
